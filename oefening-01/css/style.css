@@ -1,0 +1,22 @@
+/* drie basisstijlregels om je te helpen */
+:root {/*OF html --> the root element is always the html element.*/
+  font-size: 62.5%; /* zet je dit op 62.5%, dan is elke rem 10px waard, anders 16px */
+}
+html {
+  box-sizing: border-box; /*OVERBODIG Zet box-sizing op border-box voor het html element */
+}
+*,
+*:before, /* ::after ::before worden gebruikt om specifieke delen van een element te stylen. Ze zijn meestal gebruikt om content in te voegen zonder dat je de HTML hoeft aan te passen.*/
+*:after {
+  box-sizing: border-box;  /* Zet box-sizing op border-box voor alle elementen, inclusief pseudo-elementen */
+}
+
+
+/* hier komt jouw css */
+body{
+  background-color: red;
+  font-family: Arial, Helvetica, sans-serif;
+}
+p{
+  color: blue;
+}

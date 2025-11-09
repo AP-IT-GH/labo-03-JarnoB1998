@@ -1,0 +1,41 @@
+/* drie basisstijlregels om je te helpen */
+:root {/*OF html --> the root element is always the html element.*/
+  font-size: 100%; /* zet je dit op 62.5%, dan is elke rem 10px waard, anders 16px */
+}
+html {
+  box-sizing: border-box; /*OVERBODIG Zet box-sizing op border-box voor het html element */
+}
+*,
+*:before, /* ::after ::before worden gebruikt om specifieke delen van een element te stylen. Ze zijn meestal gebruikt om content in te voegen zonder dat je de HTML hoeft aan te passen.*/
+*:after {
+  box-sizing: border-box;  /* Zet box-sizing op border-box voor alle elementen, inclusief pseudo-elementen */
+}
+
+
+/* hier komt jouw css */
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  text-align: center;
+}
+h1, h2{
+  font-weight: 900;
+}
+.solid, .double, .dotted{
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 10px solid black;
+}
+.solid{
+  background-color: red;
+}
+.double{
+  background-color: green;
+  border-style: double;
+}
+.dotted{
+  border-style: dashed;
+  background-color: blue;
+}

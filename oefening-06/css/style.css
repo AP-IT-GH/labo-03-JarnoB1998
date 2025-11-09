@@ -1,0 +1,61 @@
+/* drie basisstijlregels om je te helpen */
+:root {/*OF html --> the root element is always the html element.*/
+  font-size: 62.5%; /* zet je dit op 62.5%, dan is elke rem 10px waard, anders 16px */
+}
+html {
+  box-sizing: border-box; /*OVERBODIG Zet box-sizing op border-box voor het html element */
+}
+*,
+*:before, /* ::after ::before worden gebruikt om specifieke delen van een element te stylen. Ze zijn meestal gebruikt om content in te voegen zonder dat je de HTML hoeft aan te passen.*/
+*:after {
+  box-sizing: border-box;  /* Zet box-sizing op border-box voor alle elementen, inclusief pseudo-elementen */
+}
+
+
+/* hier komt jouw css */
+body{
+  background-color: gray;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  margin: 60px 30px;
+  font-size: 14px;
+}
+h1{
+  background-color: lightgray;
+  margin-bottom: 30px;
+  padding: 20px;
+  color: gray;
+  font-weight: 700;
+}
+p{
+  background-color: rgb(0, 131, 175);
+  margin: 0;
+  padding: 5px;
+  text-transform: uppercase;
+}
+p:nth-of-type(2){
+  background-color: rgb(8, 142, 187);
+}
+p:nth-of-type(3){
+  background-color: rgb(27, 159, 203);
+}
+
+p:nth-of-type(4){
+  background-color: rgb(39, 184, 232);
+}
+
+p:nth-of-type(5){
+  background-color: rgb(75, 206, 250);
+}
+
+p:nth-of-type(6){
+  background-color: rgb(125, 223, 255);
+}
+
+p:nth-of-type(7){
+  background-color: rgb(142, 221, 248);
+}
+
+p:nth-of-type(8){
+  background-color: rgb(28, 129, 30);
+}
